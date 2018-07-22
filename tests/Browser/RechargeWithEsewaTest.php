@@ -27,7 +27,7 @@ class RechargeWithEsewaTest extends DuskTestCase
 
             $browser->visit('https://esewa.com.np/#/make_payment/NTNAM/NT%20Prepaid%20Topup')
             ->pause(1500)
-            ->type('#mobileNo','9841145614')
+            ->type('#mobileNo',$username)
             ->select('#amount',10)
             ->pause(2000)
             ->click('#proceedfundTransferPayment')

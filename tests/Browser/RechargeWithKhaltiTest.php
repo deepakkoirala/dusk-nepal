@@ -30,7 +30,7 @@ class RechargeWithKhaltiTest extends DuskTestCase
 
             $browser->visit('https://khalti.com/#/service/topup/')
                 ->pause(2000)
-                ->type('.sixteen.wide.mobile.eight.wide.computer.column [type=text]','9841145614')
+                ->type('.sixteen.wide.mobile.eight.wide.computer.column [type=text]',$username)
                 ->pause(1000)
                 ->click('.sixteen.wide.mobile.eight.wide.computer.column .selection')
                 ->pause(1000)
